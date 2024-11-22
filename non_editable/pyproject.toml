@@ -1,0 +1,16 @@
+[tool.poetry]
+packages = [
+  { include = "./**/*.py", to = "dist_name/non_editable" },
+]
+name = "non_editable"
+version = "1"
+description = "non_editable"
+authors = ["author"]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+
+[build-system]
+requires = ["poetry-core>=1.9.1"]
+build-backend = "poetry.core.masonry.api"

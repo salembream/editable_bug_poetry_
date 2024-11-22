@@ -1,0 +1,15 @@
+[tool.poetry]
+packages = [{ include = "./**/*.py" }]
+name = "check_packages"
+version = "1"
+description = "check_packages"
+authors = ["author"]
+
+[tool.poetry.dependencies]
+python = "^3"
+editable = { path = "../editable", develop = true }
+non_editable = { path = "../non_editable" }
+
+[build-system]
+requires = ["poetry-core>=1.9.1"]
+build-backend = "poetry.core.masonry.api"

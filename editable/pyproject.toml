@@ -1,0 +1,16 @@
+[tool.poetry]
+packages = [
+  { include = "./**/*.py", to = "dist_name/editable" },
+]
+name = "editable"
+version = "1"
+description = "editable"
+authors = ["author"]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+
+[build-system]
+requires = ["poetry-core>=1.9.1"]
+build-backend = "poetry.core.masonry.api"
